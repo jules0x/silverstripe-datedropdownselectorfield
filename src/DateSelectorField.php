@@ -139,10 +139,10 @@ class DateSelectorField extends CompositeField
                 }
             }
         }
-        $message = $this->Message();
-        $type = $this->MessageType();
+//        $message = $this->Message();
+//        $type = $this->MessageType();
 
-        $content .= (!empty($message)) ? "<span class=\"message $type\">$message</span>" : "";
+//        $content .= (!empty($message)) ? "<span class=\"message $type\">$message</span>" : "";
 
         $content .= "</div>\n";
 
@@ -160,7 +160,7 @@ class DateSelectorField extends CompositeField
         return $this->value;
     }
 
-    public function setValue($value)
+    public function setValue($value, $data = null)
     {
         if (is_string($value)) {
             $value = new DateTime($value);
