@@ -1,5 +1,9 @@
 <?php
 
+namespace DNADesign\DateDropdownSelectorField;
+
+use SilverStripe\UserForms\Model\EditableFormField;
+
 if(class_exists('EditableDateField')) {
 	class EditableDateDropdownField extends EditableFormField {
 		

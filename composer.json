@@ -1,17 +1,33 @@
 {
-	"name": "dnadesign/silverstripe-datedropdownselectorfield",
-	"description": "Select your date values with Dropdown Fields",
-	"type": "silverstripe-module",
-	"keywords": ["silverstripe", "date", "dropdown"],
-	"license": "BSD-3-Clause",
-	"authors": [{
-		"name": "John Milmine",
-		"email": "john.milmine@dna.co.nz"
-	}],
-	"require": {
-		"silverstripe/framework": "3.*"
-	},
-	"extra" : {
-		"installer-name": "datedropdownselectorfield"
-	}
+    "name": "dnadesign/silverstripe-datedropdownselectorfield",
+    "description": "Select date values with Dropdown Fields",
+    "type": "silverstripe-vendormodule",
+    "license": "BSD-3-Clause",
+    "homepage": "https://github.com/dnadesign/silverstripe-datedropdownselectorfield",
+    "keywords": [
+        "silverstripe",
+        "date",
+        "dropdown"
+    ],
+    "authors": [
+        {
+            "name": "John Milmine",
+            "email": "john.milmine@dna.co.nz"
+        }
+    ],
+    "require": {
+        "silverstripe/framework": "^4"
+    },
+    "extra": {
+        "installer-name": "datedropdownselectorfield",
+        "expose": [
+            "css/"
+        ]
+    },
+    "autoload": {
+        "psr-4": {
+            "dnadesign\\datedropdownselectorfield\\": "src/"
+        }
+    },
+    "minimum-stability": "dev"
 }

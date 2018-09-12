@@ -4,29 +4,26 @@
 
 ## Introduction
 
-An assortment of classes to help selecting dates in SilverStripe via dropdown 
-lists rather than inputs.
+An assortment of classes to help selecting dates in SilverStripe via dropdown lists rather than inputs.
 
 ## Maintainer Contact
 
-	* John Milmine (john.milmine@dna.co.nz)
+	John Milmine (john.milmine@dna.co.nz)
 
 ## Requirements
 
- * SilverStripe 3.x
+ * SilverStripe ^4
 
 
-## Installion
+## Installation
 
 	composer require "dnadesign/silverstripe-datedropdownselectorfield": "dev-master"
 
 ## Features
 
  * `DateSelectorField` - FormField providing 3 dropdown options
- * `DateRangeSelectorField` - Composite Field containing two DateSelectorField
- instances for selecting a range
- * `DateRangeFilter` - SearchFilter for use in ModelAdmin and other contexts for
- use with the DateRangeSelectorField
+ * `DateRangeSelectorField` - Composite Field containing two DateSelectorField instances for selecting a range
+ * `DateRangeFilter` - SearchFilter for use in ModelAdmin and other contexts for use with the DateRangeSelectorField
  * UserForms integration
 
 ## License
